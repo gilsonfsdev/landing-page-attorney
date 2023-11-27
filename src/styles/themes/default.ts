@@ -21,4 +21,6 @@ export const defaultTheme = {
   'base-card': '#f3f2f2',
   'base-background': '#fafafa',
   'base-white': '#ffffff',
+  'base-nav': '#001232',
+  'blue-home': '#18549B',
 }
