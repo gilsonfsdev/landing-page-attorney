@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 export const Container = styled.main`
   margin: 50px auto 0 auto;
-  max-height: 570px;
   background-color: ${(props) => props.theme['blue-home']};
   color: ${(props) => props.theme['base-white']};
 
@@ -23,6 +22,7 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  height: 600px;
 
   div {
     display: flex;
@@ -35,7 +35,7 @@ export const Wrapper = styled.div`
   }
 
   img {
-    max-height: 570px;
+    max-height: 100%;
   }
 
   a {

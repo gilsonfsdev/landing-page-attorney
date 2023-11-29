@@ -4,6 +4,7 @@ import { GlobalStyle } from './global'
 import { Header } from './components/Header'
 import { Home } from './pages/Home'
 import { WhatsApp } from './components/whats'
+import { Servicos } from './pages/Serviços'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <Home />
       <WhatsApp />
+      <Servicos />
       <GlobalStyle />
     </ThemeProvider>
   )

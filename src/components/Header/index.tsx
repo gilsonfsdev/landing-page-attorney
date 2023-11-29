@@ -10,13 +10,12 @@ export function Header() {
         <nav>
           <ul>
             <li>Início</li>
-            <li>Vlv Advogados</li>
             <li>Nossos Serviços</li>
             <li>Equipe</li>
             <li>Fale Conosco</li>
           </ul>
         </nav>
-      </div>{' '}
+      </div>
     </HeaderContainer>
   )
 }

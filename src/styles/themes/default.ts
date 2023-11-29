@@ -6,7 +6,7 @@ export const defaultTheme = {
   'yellow-light': '#f1e9c9',
 
   'purple-dark': '#4b2995',
-  'purple-base': '#8047f8',
+  'purple-base': '#225795',
   'purple-light': '#EBE5F9',
 
   // Base
@@ -19,7 +19,7 @@ export const defaultTheme = {
   'base-button': '#e6e5e5',
   'base-input': '#ededed',
   'base-card': '#f3f2f2',
-  'base-background': '#fafafa',
+  'base-background': '#f3f3f3',
   'base-white': '#ffffff',
   'base-nav': '#001232',
   'blue-home': '#18549B',
