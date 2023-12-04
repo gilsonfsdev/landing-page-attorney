@@ -5,6 +5,8 @@ import { Header } from './components/Header'
 import { Home } from './pages/Home'
 import { WhatsApp } from './components/whats'
 import { Servicos } from './pages/Serviços'
+import { Why } from './pages/Why'
+import { Perguntas } from './pages/Perguntas'
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <Home />
       <WhatsApp />
       <Servicos />
+      <Why />
+      <Perguntas />
       <GlobalStyle />
     </ThemeProvider>
   )

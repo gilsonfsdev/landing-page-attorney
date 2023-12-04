@@ -23,4 +23,5 @@ export const defaultTheme = {
   'base-white': '#ffffff',
   'base-nav': '#001232',
   'blue-home': '#18549B',
+  'base-background-accordion': '#E3EAF3',
 }

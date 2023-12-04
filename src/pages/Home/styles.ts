@@ -45,15 +45,15 @@ export const Wrapper = styled.div`
     padding: 1rem 0.5rem;
     width: 250px;
     font-weight: 700;
-    background-color: ${(props) => props.theme['base-white']};
-    color: ${(props) => props.theme['base-nav']};
+    background-color: ${(props) => props.theme['base-nav']};
+    color: ${(props) => props.theme['base-white']};
 
     text-align: center;
     transition: 0.3s all ease-in-out;
 
     &:hover {
-      background-color: ${(props) => props.theme['base-nav']};
-      color: ${(props) => props.theme['base-white']};
+      background-color: ${(props) => props.theme['base-white']};
+      color: ${(props) => props.theme['base-nav']};
     }
   }
 `

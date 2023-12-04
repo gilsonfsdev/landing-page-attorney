@@ -68,6 +68,7 @@ export const ServicesLink = styled.button<{ selected: boolean }>`
     display: ${({ selected }) => (selected ? 'initial' : 'none')};
     position: absolute;
     left: -2rem;
+    color: ${(props) => props.theme['blue-home']};
   }
 `
 
