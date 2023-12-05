@@ -1,65 +1,88 @@
 import styled from 'styled-components'
 
-export const HeaderContainer = styled.header`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 100%;
-  padding: 0rem 3rem;
-
-  background: #fff;
-  position: fixed;
-  height: 104px;
-  left: 0;
-  right: 0;
-  top: 0px;
-
-  @media (min-width: 1180px) {
-    max-width: 75rem;
-  }
+export const Container = styled.footer`
+  background: ${(props) => props.theme['footer-blue']};
 `
 
-export const ShoppingCartDiv = styled.div`
+export const Wrapper = styled.div`
+  margin: 0 auto;
   display: flex;
-  gap: 0.8rem;
+  padding: 4rem;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  max-width: 1100px;
+`
 
-  img {
-    background: transparent;
-  }
+export const Div1 = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  color: white;
 
   div {
-    background: ${(props) => props.theme['purple-light']};
-    color: ${(props) => props.theme['purple-dark']};
-    border-radius: 8px;
-    padding: 0.5rem;
-
     display: flex;
-    align-items: center;
+    flex-direction: column;
     gap: 0.5rem;
+    position: relative;
 
-    p {
-      background: transparent;
+    &:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      top: 30%;
+      bottom: 30%;
+      right: -1.5rem;
+      width: 1px;
+      background-color: ${(props) => props.theme['base-hover']};
     }
   }
 
-  span {
-    padding: 0.5rem;
-    border-radius: 6px;
-    background: ${(props) => props.theme['yellow-light']};
-    color: ${(props) => props.theme['yellow-dark']};
-    position: relative;
+  h5 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+    text-align: center;
   }
 `
-export const P = styled.p`
-  position: absolute;
-  top: -10px;
-  right: -5px;
+export const Div2 = styled.ul`
+  display: flex;
+  gap: 0.5rem;
+  list-style-type: none;
 
-  background: ${(props) => props.theme['yellow-dark']};
-  color: #fff;
-  border-radius: 50px;
-  font-size: 0.75rem;
-  font-weight: 700;
-  padding: 0.2rem 0.4rem;
+  li {
+    border: 1px solid white;
+    padding: 0.5rem;
+    border-radius: 100%;
+  }
+
+  a {
+    color: white;
+  }
+`
+
+export const Div3 = styled.div`
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+
+  img {
+    height: 2rem;
+  }
+`
+export const Div4 = styled.div`
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  text-align: center;
+  color: white;
+  background-color: ${(props) => props.theme['footer-blue-dark']};
+  font-size: 0.8rem;
+
+  span {
+    color: ${(props) => props.theme['base-label']};
+  }
 `

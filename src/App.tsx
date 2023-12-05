@@ -7,6 +7,7 @@ import { WhatsApp } from './components/whats'
 import { Servicos } from './pages/Serviços'
 import { Why } from './pages/Why'
 import { Perguntas } from './pages/Perguntas'
+import { Footer } from './components/Footer'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Servicos />
       <Why />
       <Perguntas />
+      <Footer />
       <GlobalStyle />
     </ThemeProvider>
   )

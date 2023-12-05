@@ -24,4 +24,6 @@ export const defaultTheme = {
   'base-nav': '#001232',
   'blue-home': '#18549B',
   'base-background-accordion': '#E3EAF3',
+  'footer-blue': '#21324c',
+  'footer-blue-dark': '#162234',
 }
