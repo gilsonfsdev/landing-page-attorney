@@ -9,6 +9,10 @@ export const AccordionItem = styled.div`
   @media (max-width: 660px) {
     width: 400px;
   }
+
+  @media (max-width: 500px) {
+    width: 250px;
+  }
 `
 
 export const AccordionTitle = styled.div`
@@ -30,4 +34,8 @@ export const AccordionContent = styled.div<{ isOpen: boolean }>`
   color: ${(props) => props.theme['base-subtitle']};
   font-size: 0.9rem;
   line-height: 1.5;
+
+  @media (max-width: 500px) {
+    padding: 1rem;
+  }
 `

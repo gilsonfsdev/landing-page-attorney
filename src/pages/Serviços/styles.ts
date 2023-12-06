@@ -109,6 +109,11 @@ export const DivDetails = styled.div<{ transition: boolean }>`
     align-self: center;
   }
 
+  @media (max-width: 569px) {
+    width: 220px;
+    align-self: center;
+  }
+
   div {
     display: flex;
     flex-direction: column;

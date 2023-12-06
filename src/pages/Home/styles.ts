@@ -47,6 +47,12 @@ export const Wrapper = styled.div`
       }
     }
 
+    @media (max-width: 569px) {
+      img {
+        height: 35%;
+      }
+    }
+
     @media (max-width: 570px) {
       max-width: 50%;
     }

@@ -66,6 +66,10 @@ export const Div2 = styled.div`
       @media (max-width: 1100px) {
         max-width: 400px;
       }
+
+      @media (max-width: 500px) {
+        max-width: 300px;
+      }
     }
 
     div {

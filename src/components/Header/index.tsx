@@ -1,30 +1,74 @@
-import { HeaderContainer } from './styles'
+import { Div1, HeaderContainer, MenuMobileOpen, NavBar, Ul } from './styles'
 import logo from '../../assets/logo.svg'
+import { IoMenu, IoClose } from 'react-icons/io5'
+import { useState } from 'react'
 
 export function Header() {
+  const [isOpen, setIsOpen] = useState(false)
+
+  const openMenuMobile = () => {
+    setIsOpen(!isOpen)
+  }
+
   return (
-    <HeaderContainer>
-      <div>
-        <img src={logo} alt="" />
+    <>
+      <HeaderContainer>
+        <Div1>
+          <img src={logo} alt="" />
 
-        <nav>
-          <ul>
+          <NavBar>
+            <ul>
+              <li>
+                <a href="#">Início</a>
+              </li>
+              <li>
+                <a href="#servico">Serviços</a>
+              </li>
+
+              <li>
+                <a href="#perguntas">Perguntas Frequentes</a>
+              </li>
+              <li>
+                <a href="#footer">Fale Conosco</a>
+              </li>
+            </ul>
+            <button onClick={openMenuMobile}>
+              <IoMenu size={45} />
+            </button>
+          </NavBar>
+        </Div1>
+      </HeaderContainer>
+      {isOpen && (
+        <MenuMobileOpen>
+          <button onClick={openMenuMobile}>
+            <IoClose size={50} />
+          </button>
+
+          <Ul>
             <li>
-              <a href="#">Início</a>
+              <a href="#" onClick={openMenuMobile}>
+                Início
+              </a>
             </li>
             <li>
-              <a href="#servico">Serviços</a>
+              <a href="#servico" onClick={openMenuMobile}>
+                Serviços
+              </a>
             </li>
 
             <li>
-              <a href="#perguntas">Perguntas Frequentes</a>
+              <a href="#perguntas" onClick={openMenuMobile}>
+                Perguntas Frequentes
+              </a>
             </li>
             <li>
-              <a href="#footer">Fale Conosco</a>
+              <a href="#footer" onClick={openMenuMobile}>
+                Fale Conosco
+              </a>
             </li>
-          </ul>
-        </nav>
-      </div>
-    </HeaderContainer>
+          </Ul>
+        </MenuMobileOpen>
+      )}
+    </>
   )
 }
