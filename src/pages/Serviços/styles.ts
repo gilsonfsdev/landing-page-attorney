@@ -14,11 +14,26 @@ export const Wrapper = styled.div`
   margin: 0 auto;
   gap: 2rem;
   padding: 5rem;
+
+  @media (max-width: 660px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `
 export const ServicesBloc = styled.div`
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+
+  @media (max-width: 996px) {
+    align-self: baseline;
+  }
+
+  @media (max-width: 660px) {
+    align-self: center;
+  }
 
   h3 {
     font-size: 1.5rem;
@@ -55,6 +70,10 @@ export const ServicesBloc = styled.div`
 
 export const DetailsBloc = styled.div`
   max-width: 50%;
+
+  @media (max-width: 660px) {
+    max-width: 100%;
+  }
 `
 
 export const ServicesLink = styled.button<{ selected: boolean }>`
@@ -80,6 +99,15 @@ export const DivDetails = styled.div<{ transition: boolean }>`
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
+
+  @media (max-width: 996px) {
+    width: 300px;
+  }
+
+  @media (max-width: 660px) {
+    width: 400px;
+    align-self: center;
+  }
 
   div {
     display: flex;

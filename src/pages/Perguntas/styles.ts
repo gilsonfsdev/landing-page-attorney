@@ -8,4 +8,8 @@ export const Wrapper = styled.div`
   gap: 2rem;
   align-items: center;
   background: ${(props) => props.theme['base-background-accordion']};
+
+  h2 {
+    margin-top: 3rem;
+  }
 `

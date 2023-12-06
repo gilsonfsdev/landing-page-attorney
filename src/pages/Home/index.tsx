@@ -1,5 +1,9 @@
-import { Container, Wrapper } from './styles'
+import { Container, Div2, Wrapper } from './styles'
 import blogueira from '../../assets/blogueira.webp'
+import { AiOutlineFacebook } from 'react-icons/ai'
+import { RiInstagramLine } from 'react-icons/ri'
+import { FiYoutube } from 'react-icons/fi'
+import { SlSocialTwitter } from 'react-icons/sl'
 
 export function Home() {
   return (
@@ -18,6 +22,28 @@ export function Home() {
           >
             Fale com a nossa equipe
           </a>
+          <Div2>
+            <li>
+              <a href="#" target="_blank" rel="noreferrer">
+                <AiOutlineFacebook size={20} />
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noreferrer">
+                <RiInstagramLine size={20} />
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noreferrer">
+                <FiYoutube size={20} />
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noreferrer">
+                <SlSocialTwitter size={20} />
+              </a>
+            </li>
+          </Div2>
         </div>
         <img src={blogueira} alt="" />
       </Wrapper>

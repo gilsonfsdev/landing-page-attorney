@@ -18,7 +18,6 @@ export function Servicos() {
     setSelectedTopic(topicNumber)
     setDetailsTransition(false)
 
-    // Aguarde um curto período para permitir que a transição ocorra antes de alterar os detalhes
     setTimeout(() => {
       setDetailsTransition(true)
     }, 10)
@@ -26,7 +25,7 @@ export function Servicos() {
 
   return (
     <Container>
-      <Wrapper>
+      <Wrapper id="servico">
         <ServicesBloc>
           <h3>Nossos Serviços</h3>
           <ul>

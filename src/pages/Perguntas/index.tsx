@@ -3,7 +3,7 @@ import { Accordion } from '../../components/Accordion/index'
 
 export function Perguntas() {
   return (
-    <Wrapper>
+    <Wrapper id="perguntas">
       <h2>Perguntas Frequentes</h2>
 
       <Accordion />

@@ -20,6 +20,10 @@ export const Div1 = styled.div`
   gap: 2rem;
   color: white;
 
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+
   div {
     display: flex;
     flex-direction: column;
@@ -29,11 +33,15 @@ export const Div1 = styled.div`
     &:not(:last-child)::after {
       content: '';
       position: absolute;
-      top: 30%;
-      bottom: 30%;
+      top: 10%;
+      bottom: 50%;
       right: -1.5rem;
       width: 1px;
       background-color: ${(props) => props.theme['base-hover']};
+
+      @media (max-width: 1100px) {
+        display: none;
+      }
     }
   }
 
@@ -56,6 +64,7 @@ export const Div2 = styled.ul`
     border: 1px solid white;
     padding: 0.5rem;
     border-radius: 100%;
+    cursor: pointer;
   }
 
   a {

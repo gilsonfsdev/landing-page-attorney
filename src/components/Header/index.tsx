@@ -9,10 +9,19 @@ export function Header() {
 
         <nav>
           <ul>
-            <li>Início</li>
-            <li>Nossos Serviços</li>
-            <li>Equipe</li>
-            <li>Fale Conosco</li>
+            <li>
+              <a href="#">Início</a>
+            </li>
+            <li>
+              <a href="#servico">Serviços</a>
+            </li>
+
+            <li>
+              <a href="#perguntas">Perguntas Frequentes</a>
+            </li>
+            <li>
+              <a href="#footer">Fale Conosco</a>
+            </li>
           </ul>
         </nav>
       </div>

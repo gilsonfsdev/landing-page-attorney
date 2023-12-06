@@ -23,11 +23,43 @@ export const Wrapper = styled.div`
   align-items: center;
   margin: 0 auto;
   height: 600px;
+  padding-top: 1rem;
+
+  @media (max-width: 1200px) {
+    max-width: 900px;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  @media (max-width: 996px) {
+    flex-direction: column-reverse;
+    text-align: center;
+    height: 1000px;
+    padding-top: 0;
+
+    img {
+      height: 60%;
+    }
+
+    @media (max-width: 660px) {
+      img {
+        height: 50%;
+      }
+    }
+
+    @media (max-width: 570px) {
+      max-width: 50%;
+    }
+  }
 
   div {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+
+    @media (max-width: 996px) {
+      align-items: center;
+    }
 
     p {
       width: 80%;
@@ -55,5 +87,23 @@ export const Wrapper = styled.div`
       background-color: ${(props) => props.theme['base-white']};
       color: ${(props) => props.theme['base-nav']};
     }
+  }
+`
+
+export const Div2 = styled.ul`
+  display: flex;
+  gap: 0.3rem;
+
+  li {
+    list-style-type: none;
+    text-align: center;
+
+    a {
+      padding: 1rem 0.8rem 0.9rem;
+    }
+  }
+
+  @media (max-width: 996px) {
+    justify-content: center;
   }
 `

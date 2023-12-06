@@ -5,6 +5,10 @@ export const AccordionContainer = styled.div``
 export const AccordionItem = styled.div`
   width: 600px;
   margin-bottom: 1rem;
+
+  @media (max-width: 660px) {
+    width: 400px;
+  }
 `
 
 export const AccordionTitle = styled.div`

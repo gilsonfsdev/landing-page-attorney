@@ -7,11 +7,22 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 4rem;
+
+  @media (max-width: 1100px) {
+    align-items: center;
+  }
 `
 export const Div1 = styled.div`
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 2rem;
+
+  @media (max-width: 1100px) {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    justify-content: center;
+    align-items: center;
+  }
 
   h3 {
     align-self: center;
@@ -35,12 +46,26 @@ export const Div2 = styled.div`
   gap: 2rem;
   box-sizing: border-box;
 
+  @media (max-width: 1100px) {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+  }
+
   div {
+    @media (max-width: 1100px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
     img {
       max-width: 300px;
       height: auto;
       border-radius: 6px;
       margin-bottom: 1rem;
+
+      @media (max-width: 1100px) {
+        max-width: 400px;
+      }
     }
 
     div {

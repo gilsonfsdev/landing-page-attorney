@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
-  width: 100%;
   margin: 0 auto;
   padding: 1.5rem;
 
@@ -12,6 +11,7 @@ export const HeaderContainer = styled.header`
   color: ${(props) => props.theme['base-nav']};
 
   background: ${(props) => props.theme['base-white']};
+  z-index: 1;
 
   div {
     max-width: 1100px;
@@ -19,6 +19,10 @@ export const HeaderContainer = styled.header`
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+
+    @media (max-width: 1200px) {
+      max-width: 900px;
+    }
   }
 
   img {
@@ -33,6 +37,21 @@ export const HeaderContainer = styled.header`
       margin-left: 1.5rem;
       font-weight: bold;
       cursor: pointer;
+
+      @media (max-width: 600px) {
+        margin-left: 0.6rem;
+        font-size: 0.8rem;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: ${(props) => props.theme['base-nav']};
+      transition: 0.2s all ease-in-out;
+
+      &:hover {
+        color: ${(props) => props.theme['purple-base']};
+      }
     }
   }
 `

@@ -12,7 +12,7 @@ import logogoogle from '../../assets/logo-google.png'
 export function Footer() {
   return (
     <Container>
-      <Wrapper>
+      <Wrapper id="footer">
         <img src={logo} alt="" />
         <Div1>
           <div>
